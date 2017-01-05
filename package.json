@@ -1,0 +1,40 @@
+{
+  "name": "www-starter",
+  "version": "0.0.1",
+  "description": "react, react-router, react-bootstrap, webpack, typescript project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --port=8080 --progress --inline"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/aphrodite": "^0.5.4",
+    "@types/axios": "^0.9.33",
+    "@types/qs": "^6.2.30",
+    "@types/react": "^0.14.49",
+    "@types/react-bootstrap": "0.0.36",
+    "@types/react-dom": "^0.14.18",
+    "@types/react-router": "^2.0.39",
+    "@types/react-router-bootstrap": "0.0.27",
+    "@types/typescript": "^2.0.0",
+    "aphrodite": "^1.1.0",
+    "axios": "^0.15.2",
+    "qs": "^6.3.0",
+    "react": "^15.4.0",
+    "react-bootstrap": "^0.30.6",
+    "react-dom": "^15.4.0",
+    "react-router": "^3.0.0",
+    "react-router-bootstrap": "^0.23.1",
+    "typescript": "^2.0.10"
+  },
+  "devDependencies": {
+    "es6-promise": "^4.0.5",
+    "source-map-loader": "^0.1.5",
+    "ts-loader": "^1.2.2",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
