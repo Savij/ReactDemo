@@ -10,6 +10,7 @@ import Header from './Navigation/Header';
 import Dashboard from './Home/Dashboard';
 import Login from './Home/Login';
 import Settings from './Settings/Settings';
+import ParentComponent from './ParentComponent/ParentComponent';
 
 interface IAuthentication {
     result: {
@@ -42,7 +43,7 @@ function requireAuth(nextState: any, replace: any) {
 const routes = <Router history={ browserHistory }>
     <Route path='/' component={ App }>
         <IndexRoute component={ Dashboard } />
-        <Route path='home' component={ Dashboard } />
+        <Route path='home' component={ ParentComponent } />
         <Route path='settings' component={ Settings } onEnter={ requireAuth } />
         <Route path='login' component={ Login } />
     </Route>
