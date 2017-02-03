@@ -13,15 +13,9 @@ export default class ToDoList extends React.Component<IProps, {}> {
             <div className="container">
                 <div className={`row ${css(styles.rowPad)}`}>
                     <div className="col-lg-12">
-                        {
-                            this.props.toDos && this.props.toDos.length > 0 && <ul>
-                                {
-                                    this.props.toDos.map(toDo => {
-                                        return <li key={toDo.id}>{toDo.toDo}</li>
-                                    })
-                                }
+                           <ul>
+                               <li>my Items</li>                               
                             </ul>
-                        }
                     </div>
                 </div>
             </div>

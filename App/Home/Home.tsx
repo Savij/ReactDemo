@@ -18,18 +18,9 @@ export default class Home extends React.Component<{}, IState> {
         });
     }
 
-    private baddAddToDo(newItem: IToDo) {
-        this.state.toDoList.push(newItem); // WRONG!
+    private addToDo(newItem: IToDo) {
+        this.state.toDoList.push(newItem);
         this.setState({ currentToDo: '' });
-    }
-
-    private goodAddToDo(newItem: IToDo) {
-        const newList = [...this.state.toDoList];
-        newList.push(newItem);
-        this.setState({
-            toDoList: newList,
-            currentToDo: ''
-        })
     }
 
     public render() {
@@ -40,11 +31,7 @@ export default class Home extends React.Component<{}, IState> {
                         <input type="text" value={this.state.currentToDo}
                             onChange={(evt) => this.setState({ currentToDo: (evt.target as HTMLInputElement).value })} />
                         <span>
-                            <input type="button" className={`btn btn-success ${css(styles.addButton)}`} value="Add ToDo" onClick={() =>
-                                this.goodAddToDo({
-                                    id: this.state.toDoList.length,
-                                    toDo: this.state.currentToDo
-                                } as IToDo)} />
+                            <input type="button" className={`btn btn-success ${css(styles.addButton)}`} value="Add ToDo" />
                         </span>
                     </div>
                 </div>
